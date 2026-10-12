@@ -91,6 +91,33 @@ h1 {
 }
 
 
+.main-content { 
+    padding-block: 32px 64px; 
+}
+.section-card { 
+    margin-bottom: 22px; 
+    padding: clamp(22px, 4vw, 36px); 
+    background: var(--surface); 
+    border: 1px solid var(--line); 
+    border-radius: 18px; 
+    box-shadow: var(--shadow); 
+}
+.section-heading { 
+    display: flex; 
+    align-items: center; 
+    gap: 13px; 
+    margin-bottom: 24px; 
+}
+.section-heading h2 { 
+    margin: 0; 
+    font-size: clamp(1.35rem, 3vw, 1.75rem); 
+    letter-spacing: -.025em; 
+}
+.lead { 
+    max-width: 780px; 
+    color: #475467; 
+    font-size: 1.05rem; 
+}
 
 
 
