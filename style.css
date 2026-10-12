@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #667085;
+  --primary: #2457d6;
+  --primary-dark: #173ea7;
+  --line: #e6eaf2;
+  --soft-blue: #edf3ff;
+  --shadow: 0 12px 34px rgba(20, 39, 80, .07);
+}
+
+* { box-sizing: border-box; }
+html { 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 90px;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', Arial, sans-serif;
+    line-height: 1.65;
+}
+a { 
+    color: var(--primary); 
+    text-decoration: none; 
+}
+a:hover { 
+    color: var(--primary-dark); 
+}
+.container { 
+    width: min(1080px, calc(100% - 40px)); 
+    margin-inline: auto; 
+}
+
+
+h1, h2, h3, p { 
+    margin-top: 0; 
+}
+h1, h2, h3 { 
+    font-family: 'Manrope', 
+    sans-serif; line-height: 1.25; 
+}
+h1 { 
+    margin-bottom: 8px; 
+    font-size: clamp(2.35rem, 6vw, 4rem); 
+    letter-spacing: -.045em; 
+}
+
+.site-nav { 
+    position: sticky; 
+    top: 0; z-index: 10; 
+    background: rgba(255,255,255,.94); 
+    border-bottom: 1px solid var(--line); 
+    backdrop-filter: blur(12px); 
+}
+.nav-inner { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 22px; 
+    min-height: 64px; 
+}
+.brand { 
+    color: var(--text); 
+    font-family: 'Manrope', 
+    sans-serif; 
+    font-weight: 800; 
+    white-space: nowrap; 
+}
+.site-nav ul { 
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
+    gap: 4px 18px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+.site-nav li a { 
+    color: #475467; 
+    font-size: .88rem; 
+    font-weight: 600; 
+}
+.site-nav li a:hover { 
+    color: var(--primary); 
+}
+
+
+
+
+
+
+
+
+
+
+.site-footer { 
+    background: #101c3b; 
+    color: #d5def4; 
+    padding: 23px 0; 
+}
+.footer-inner { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 12px; 
+}
+.footer-inner p { 
+    margin: 0; 
+    font-size: .9rem; 
+}
+.footer-inner a { 
+    color: #fff; 
+    font-weight: 700; 
+    font-size: .9rem; 
+}
+
+@media (max-width: 800px) {
+  .nav-inner { 
+    align-items: 
+    flex-start; 
+    flex-direction: column; 
+    padding-block: 13px; 
+    gap: 9px; 
+  }
+  .site-nav ul { 
+    justify-content: flex-start; 
+    gap: 8px 15px; 
+  }
+  .contact-grid, .skills-grid { 
+    grid-template-columns: 1fr; 
+  }
+}
+@media (max-width: 520px) {
+  .container { 
+    width: min(100% - 26px, 1080px); 
+  }
+  .hero { 
+    padding: 56px 0 50px; 
+  }
+  .section-card { 
+    border-radius: 14px; 
+    padding: 21px 17px; 
+  }
+  .course-list li { 
+    flex-direction: column; 
+    gap: 3px; 
+  }
+  .footer-inner { 
+    align-items: flex-start; 
+    flex-direction: column; 
+  }
+}
+
+
+
+
+
+
+
