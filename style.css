@@ -204,6 +204,25 @@ h1 {
     color: #475467; 
 }
 
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 14px; 
+}
+.skill {
+    display: flex; 
+    gap: 13px; 
+    padding: 18px; 
+    border: 1px solid var(--line); 
+    border-radius: 13px; 
+}
+.skill p { 
+    margin-bottom: 0; 
+    color: var(--muted); 
+    font-size: .92rem; 
+}
+
+
 
 
 .site-footer { 
