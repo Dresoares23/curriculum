@@ -190,6 +190,20 @@ h1 {
     color: #475467; 
 }
 
+.education-card { 
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 16px; 
+    padding: 20px; 
+    border: 1px solid var(--line); 
+    border-radius: 13px; 
+}
+.education-card p {
+    margin-bottom: 4px; 
+    color: #475467; 
+}
+
 
 
 .site-footer { 
