@@ -120,6 +120,31 @@ h1 {
 }
 
 
+.contact-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 14px; 
+}
+.contact-item { 
+    min-width: 0; 
+    padding: 17px; 
+    border: 1px solid var(--line); 
+    border-radius: 12px; 
+    overflow-wrap: anywhere; 
+}
+.contact-label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color: var(--muted); 
+    font-size: .78rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: .06em; 
+}
+.contact-item a, .contact-item > span:last-child { 
+    font-weight: 600; 
+}
+
 
 
 
